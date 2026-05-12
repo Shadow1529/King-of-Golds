@@ -583,4 +583,4 @@ function autoLoginForTesting() {
 }
 
 // Uncomment the line below to auto-login for testing
-// autoLoginForTesting();
+autoLoginForTesting();
