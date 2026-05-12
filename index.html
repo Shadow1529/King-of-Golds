@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>King of Golds - Premium Roblox Community</title>
+  <meta name="description" content="Join King of Golds - The world's premier Roblox community with tournaments, rewards, and exclusive features." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="nav-left">
+      <div class="nav-logo">👑 KING OF GOLDS</div>
+    </div>
+    
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-tab" onclick="show('dashboard', this); closeMobileMenu()">📊 Dashboard</button>
+      <button class="mobile-tab" onclick="show('leaderboard', this); closeMobileMenu()">🏆 Leaderboard</button>
+      <button class="mobile-tab" onclick="show('profile', this); closeMobileMenu()">👤 Profile</button>
+      <button class="mobile-tab" onclick="show('settings', this); closeMobileMenu()">⚙️ Settings</button>
+      <button class="mobile-tab" onclick="show('feedback', this); closeMobileMenu()">💬 Feedback</button>
+    </div>
+
+    <div class="nav-right" id="navRight">
+      <button class="login-btn" onclick="handleLoginClick()">🔐 Login with Discord</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════ DASHBOARD ══════════════ -->
+<section id="dashboard" class="section visible">
+  <div class="premium-header">
+    <h1>Welcome to King of Golds</h1>
+    <p class="header-subtitle">The World's Premier Roblox Community</p>
+  </div>
+
+  <div class="dashboard-wrap">
+    <div id="dashboardContent">
+      <div class="login-prompt">
+        <div class="lock-icon">🔒</div>
+        <h2>Login Required</h2>
+        <p>Sign in with Discord to unlock your premium dashboard, track your progress, and join tournaments.</p>
+        <button class="hero-join" onclick="handleLoginClick()">Login with Discord</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ LEADERBOARD ══════════════ -->
+<section id="leaderboard" class="section">
+  <div class="premium-header">
+    <h1>Global Leaderboard</h1>
+    <p class="header-subtitle">Compete with the best players worldwide</p>
+  </div>
+
+  <div class="leaderboard-wrap">
+    <div class="filters">
+      <input type="text" placeholder="Search player..." class="search-input" id="searchLeaderboard" />
+      <select id="filterPeriod" class="filter-select">
+        <option value="weekly">This Week</option>
+        <option value="monthly">This Month</option>
+        <option value="alltime">All Time</option>
+      </select>
+    </div>
+
+    <div id="leaderboardContent" class="leaderboard-list">
+      <div class="login-prompt">
+        <p>Login to view the leaderboard</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PROFILE ══════════════ -->
+<section id="profile" class="section">
+  <div class="premium-header">
+    <h1>Player Profile</h1>
+    <p class="header-subtitle">Your King of Golds Journey</p>
+  </div>
+
+  <div class="profile-wrap">
+    <div id="profileContent">
+      <div class="login-prompt">
+        <p>Login to view your profile</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SETTINGS ══════════════ -->
+<section id="settings" class="section">
+  <div class="premium-header">
+    <h1>Settings</h1>
+    <p class="header-subtitle">Customize your experience</p>
+  </div>
+
+  <div class="settings-wrap">
+    <div id="settingsContent">
+      <div class="login-prompt">
+        <p>Login to access settings</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FEEDBACK ══════════════ -->
+<section id="feedback" class="section">
+  <div class="premium-header">
+    <h1>Send Feedback</h1>
+    <p class="header-subtitle">Help us improve King of Golds</p>
+  </div>
+
+  <div class="feedback-wrap">
+    <div id="feedbackContent">
+      <div class="login-prompt">
+        <p>⚠️ Login required to send feedback</p>
+        <button class="hero-join" onclick="handleLoginClick()">Login with Discord</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="premium-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>King of Golds</h4>
+      <p>Premium Roblox Community Platform</p>
+    </div>
+    <div class="footer-section">
+      <h4>Community</h4>
+      <a href="#">Discord</a>
+      <a href="#">Twitter</a>
+      <a href="#">YouTube</a>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-section">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="footerYear">2024</span> King of Golds. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
