@@ -77,7 +77,7 @@ function handleLoginClick() {
 }
 
 function loginWithDiscord() {
-  const authURL = `https://discord.com/api/oauth2/authorize?client_id=${CONFIG.DISCORD.CLIENT_ID}&response_type=code&redirect_uri=${encodeURIComponent(CONFIG.DISCORD.REDIRECT_URI)}&scope=${CONFIG.DISCORD.SCOPE}`;
+  const authURL = `const authURL = `https://discord.com/api/oauth2/authorize?client_id=${CONFIG.DISCORD.CLIENT_ID}&response_type=code&redirect_uri=${encodeURIComponent('https://king-of-golds-shadow1529.vercel.app/api/auth')}&scope=${CONFIG.DISCORD.SCOPE}`;`;
   window.location.href = authURL;
 }
 
