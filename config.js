@@ -5,13 +5,13 @@
 const CONFIG = {
   // Discord OAuth Settings
   DISCORD: {
-    CLIENT_ID: 'YOUR_DISCORD_CLIENT_ID', // Replace with your Discord Client ID
+    CLIENT_ID: '1503065084237451476', // Replace with your Discord Client ID
     REDIRECT_URI: window.location.origin + window.location.pathname,
     SCOPE: 'identify email guilds',
   },
 
   // Discord Webhook for Feedback (optional - for production)
-  WEBHOOK_URL: 'YOUR_DISCORD_WEBHOOK_URL', // Replace with your Discord webhook URL
+  WEBHOOK_URL: 'https://discord.com/api/webhooks/1503695484433203271/MGQU28s3fEhq8aPtXh_27pG2JCKFPuVrtNEcRduD0UKDK1GnctSoCOd1jzBw2MfeIztP', // Replace with your Discord webhook URL
 
   // Server Settings
   SERVER: {
