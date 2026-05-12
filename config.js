@@ -6,6 +6,7 @@ const CONFIG = {
   // Discord OAuth Settings
   DISCORD: {
     CLIENT_ID: '1503065084237451476', // Replace with your Discord Client ID
+    USE_BACKEND: true,
     REDIRECT_URI: window.location.origin + window.location.pathname,
     SCOPE: 'identify email guilds',
   },
